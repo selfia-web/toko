@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+
+<!-- Informasi Website -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOBUDA</title>
+
+    <!-- Memanggil Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Memanggil CSS Kustom -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<!-- Isi Website -->
+<body class="bg-gray-50 text-gray-800 font-sans antialiased">
+
+    <!-- Header -->
+   <header class="bg-white shadow-md sticky top-0 z-50 p-4 flex justify-between items-center">
+    <a href="#" class="text-2xl font-bold text-amber-700">LOBUDA</a>
+
+        <!-- Menu Navigasi -->
+        <nav>
+            <ul class="flex gap-6 font-medium">
+                <li><a href="#produk" class="hover:text-amber-700">Menu</a></li>
+                <li><a href="#tentang" class="hover:text-amber-700">Tentang</a></li>
+                <li><a href="#kontak" class="hover:text-amber-700">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- untuk mengasih spasi -->
+    <main>
+        <!-- Hero -->
+        <section class="bg-amber-700 text-white py-20 px-4 text-center">
+            <h1 class="text-5xl font-bold mb-4">
+                SELAMAT DATANG DI LOBUDA
+            </h1>
+
+            <p class="text-lg mb-6">
+                Nikmati segelas minuman terbaik dengan suasana yang hangat dan nyaman.
+            </p>
+
+            <a href="#produk"
+                class="bg-white text-amber-700 px-6 py-3 rounded-lg font-semibold hover:bg-gray-200">
+                LIHAT MENU
+            </a>
+        </section>
+
+       <!-- Menu -->
+        <section id="produk" class="py-10">
+        <h2 class="text-3xl font-bold text-center mb-8">
+        MENU UNGGULAN
+        </h2>
+
+        <!-- filter menu -->
+         <div class="flex justify-center gap-4 mb-8">
+
+    <button onclick="filterMenu('coffee')"
+        class="px-6 py-2 bg-amber-700 text-white rounded-lg hover:bg-amber-800">
+        ☕ Coffee
+    </button>
+
+    <button onclick="filterMenu('noncoffee')"
+        class="px-6 py-2 bg-green-600 text-white rounded-lg hover:bg-green-700">
+        🧃 Non Coffee
+    </button>
+
+    <button onclick="filterMenu('all')"
+        class="px-6 py-2 bg-gray-700 text-white rounded-lg hover:bg-gray-800">
+        Semua
+    </button>
+
+        </div>
+
+        <!-- menu -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 px-8">
+
+        <!-- Salted Caramel -->
+        <article class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition">
+
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRi3EXaC3NOI_9pxnw603s05utTMZ1XIny9aTODpKuong&s=10"
+                alt="Salted Caramel"
+                class="w-full h-72 object-cover">
+
+            <div class="p-5">
+
+                <span class="text-sm text-gray-500">
+                    KATEGORI : MINUMAN
+                </span>
+
+                <h3 class="text-2xl font-bold mt-2">
+                    Salted Caramel
+                </h3>
+
+                <p class="text-gray-600 mt-2">
+                    Sajian cair manis yang dicampur dengan karamel dan sentuhan garam laut.
+                </p>
+
+                <p class="text-xl font-bold text-amber-700 mt-3">
+                    Rp40.000
+                </p>
+
+                <button class="mt-5 w-full bg-amber-700 text-white py-2 rounded-lg hover:bg-amber-800">
+                    Pesan Sekarang
+                </button>
+
+            </div>
+
+        </article>
+
+        <!-- Americano -->
+        <article class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition">
+
+            <img src="https://images.alodokter.com/dk0z4ums3/image/upload/v1727686091/attached_image/americano-kenali-manfaat-dan-efek-sampingnya.jpg"
+                alt="Americano"
+                class="w-full h-72 object-cover">
+
+            <div class="p-5">
+
+                <span class="text-sm text-gray-500">
+                    KATEGORI : MINUMAN
+                </span>
+
+                <h3 class="text-2xl font-bold mt-2">
+                    Americano
+                </h3>
+
+                <p class="text-gray-600 mt-2">
+                    Minuman kopi hitam yang dibuat dari campuran espresso dan air.
+                </p>
+
+                <p class="text-xl font-bold text-amber-700 mt-3">
+                    Rp25.000
+                </p>
+
+                <button class="mt-5 w-full bg-amber-700 text-white py-2 rounded-lg hover:bg-amber-800">
+                    Pesan Sekarang
+                </button>
+
+            </div>
+
+        </article>
+
+        <!-- Cappuccino -->
+        <article class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition">
+
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIcILGcco1w2FNZsOT0gZOECeQs110O29shQXpAwbWmw&s=10"
+                alt="Cappuccino"
+                class="w-full h-72 object-cover">
+
+            <div class="p-5">
+
+                <span class="text-sm text-gray-500">
+                    KATEGORI : MINUMAN
+                </span>
+
+                <h3 class="text-2xl font-bold mt-2">
+                    Cappuccino
+                </h3>
+
+                <p class="text-gray-600 mt-2">
+                    Minuman kopi khas italia yang terbuat dari campuran espreso,susu panas dan busa susu .
+                </p>
+
+                <p class="text-xl font-bold text-amber-700 mt-3">
+                    Rp30.000
+                </p>
+
+                <button class="mt-5 w-full bg-amber-700 text-white py-2 rounded-lg hover:bg-amber-800">
+                    Pesan Sekarang
+                </button>
+
+            </div>
+
+        </article>
+
+        <!-- Caffe Latte -->
+        <article class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition">
+
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXtmH0cz_f4bhkiKPgjgcGDvQu_yE1oQ5jI_KL_G7j4Q&s=10"
+                alt="Caffe Latte"
+                class="w-full h-72 object-cover">
+
+            <div class="p-5">
+
+                <span class="text-sm text-gray-500">
+                    KATEGORI : MINUMAN
+                </span>
+
+                <h3 class="text-2xl font-bold mt-2">
+                    Caffe Latte
+                </h3>
+
+                <p class="text-gray-600 mt-2">
+                    Minuman kopi populer dari campuran espreso dan susu kukus (steamed milk) dengan lapisan busa tipis di atasnya.
+                </p>
+
+                <p class="text-xl font-bold text-amber-700 mt-3">
+                    Rp35.000
+                </p>
+
+                <button class="mt-5 w-full bg-amber-700 text-white py-2 rounded-lg hover:bg-amber-800">
+                    Pesan Sekarang
+                </button>
+
+            </div>
+
+        </article>
+
+        <!-- Espresso -->
+        <article class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition">
+
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkpOl1y9rtRwrUq8XKn_zJZil7cpuGg3vrOMf9HUxVLQ&s=10"
+                alt="Espresso"
+                class="w-full h-72 object-cover">
+
+            <div class="p-5">
+
+                <span class="text-sm text-gray-500">
+                    KATEGORI : MINUMAN
+                </span>
+
+                <h3 class="text-2xl font-bold mt-2">
+                    Espresso
+                </h3>
+
+                <p class="text-gray-600 mt-2">
+                    Minuman kopi pekat yang dibuat dengan cara menyemburkan air panas bertekanan tinggi (sekitar 9 bar) menembus bubuk kopi yang digiling sangat halus.
+                </p>
+
+                <p class="text-xl font-bold text-amber-700 mt-3">
+                    Rp23.000
+                </p>
+
+                <button class="mt-5 w-full bg-amber-700 text-white py-2 rounded-lg hover:bg-amber-800">
+                    Pesan Sekarang
+                </button>
+
+            </div>
+
+        </article>
+
+        <!-- Vanilla Latte -->
+        <article class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition">
+
+            <img src="https://tse4.mm.bing.net/th/id/OIP.I2BUVYSHUSjBTF88nwFkzAHaHa?r=0&pid=Api&h=220&P=0"
+                alt="Vanilla Latte"
+                class="w-full h-72 object-cover">
+
+            <div class="p-5">
+
+                <span class="text-sm text-gray-500">
+                    KATEGORI : MINUMAN
+                </span>
+
+                <h3 class="text-2xl font-bold mt-2">
+                    Vanilla Latte
+                </h3>
+
+                <p class="text-gray-600 mt-2">
+                    Minuman kopi berbasis espresso yang dicampur dengan susu panas (steamed milk) atau susu dingin, serta ditambah sirup atau ekstrak vanila..
+                </p>
+
+                <p class="text-xl font-bold text-amber-700 mt-3">
+                    Rp36.000
+                </p>
+
+                <button class="mt-5 w-full bg-amber-700 text-white py-2 rounded-lg hover:bg-amber-800">
+                    Pesan Sekarang
+                </button>
+
+            </div>
+
+        </article>
+
+        <!-- Matcha Latte-->
+        <article class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition">
+
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTa_MzJj3iEXgxsA2APLqCxPCbcyDIAoj-eZ5jKFiYag&s=10"
+                alt="Matcha Latte"
+                class="w-full h-72 object-cover">
+
+            <div class="p-5">
+
+                <span class="text-sm text-gray-500">
+                    KATEGORI : MINUMAN
+                </span>
+
+                <h3 class="text-2xl font-bold mt-2">
+                    Matcha Latte
+                </h3>
+
+                <p class="text-gray-600 mt-2">
+                    Minuman berbahan dasar teh yang terbuat dari campuran bubuk teh hijau khusus asal Jepang bernama matcha dengan susu.
+                </p>
+
+                <p class="text-xl font-bold text-amber-700 mt-3">
+                    Rp55.000
+                </p>
+
+                <button class="mt-5 w-full bg-amber-700 text-white py-2 rounded-lg hover:bg-amber-800">
+                    Pesan Sekarang
+                </button>
+
+            </div>
+
+        </article>
+
+        <!-- Chocolate -->
+        <article class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition">
+
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXzgczOaCZYFv_6bHj1gCO_0R6JmAslQRk2eMiMcB1NQ&s=10"
+                alt="Chocolate"
+                class="w-full h-72 object-cover">
+
+            <div class="p-5">
+
+                <span class="text-sm text-gray-500">
+                    KATEGORI : MINUMAN
+                </span>
+
+                <h3 class="text-2xl font-bold mt-2">
+                    Chocolate
+                </h3>
+
+                <p class="text-gray-600 mt-2">
+                    Minuman chocolate atau cokelat adalah segala jenis cairan siap konsumsi yang diolah dari bubuk kakao.
+                </p>
+
+                <p class="text-xl font-bold text-amber-700 mt-3">
+                    Rp45.000
+                </p>
+
+                <button class="mt-5 w-full bg-amber-700 text-white py-2 rounded-lg hover:bg-amber-800">
+                    Pesan Sekarang
+                </button>
+
+            </div>
+
+        </article>
+
+        <!-- Red Velvet -->
+        <article class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition">
+
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxjAmA49XAtoDgQwhbFA533bFhLcmymqtFFMlWJ4Br9A&s=10"
+                alt="Red Velvet"
+                class="w-full h-72 object-cover">
+
+            <div class="p-5">
+
+                <span class="text-sm text-gray-500">
+                    KATEGORI : MINUMAN
+                </span>
+
+                <h3 class="text-2xl font-bold mt-2">
+                    Red Velvet
+                </h3>
+
+                <p class="text-gray-600 mt-2">
+                    Minuman manis berasa khas kue red velvet dengan warna merah atau merah keunguan yang dicampur susu.
+                </p>
+
+                <p class="text-xl font-bold text-amber-700 mt-3">
+                    Rp30.000
+                </p>
+
+                <button class="mt-5 w-full bg-amber-700 text-white py-2 rounded-lg hover:bg-amber-800">
+                    Pesan Sekarang
+                </button>
+
+            </div>
+
+        </article>
+
+        <!-- Taro -->
+        <article class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition">
+
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIhCAhIZuy-NuqJCVPgRB0pprhFQtdF7j6mCYvMYdbb7zNuayNAhjrPXvY&s=10"
+                alt="Taro"
+                class="w-full h-72 object-cover">
+
+            <div class="p-5">
+
+                <span class="text-sm text-gray-500">
+                    KATEGORI : MINUMAN
+                </span>
+
+                <h3 class="text-2xl font-bold mt-2">
+                    Taro
+                </h3>
+
+                <p class="text-gray-600 mt-2">
+                    Minuman manis kekinian berwana ungu muda yang terbuat dari ekstrak atau bubuk umbi talas.
+                </p>
+
+                <p class="text-xl font-bold text-amber-700 mt-3">
+                    Rp30.000
+                </p>
+
+                <button class="mt-5 w-full bg-amber-700 text-white py-2 rounded-lg hover:bg-amber-800">
+                    Pesan Sekarang
+                </button>
+
+            </div>
+
+        </article>
+
+        <!-- thai tea -->
+        <article class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition">
+
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLA5hKFKF4eNG4ku4PpWnr38v4_hcxLhOlP8B2hIXXIg&s=10"
+                 alt="thai-tea"
+                class="w-full h-72 object-cover">
+
+            <div class="p-5">
+
+                <span class="text-sm text-gray-500">
+                    KATEGORI : MINUMAN
+                </span>
+
+                <h3 class="text-2xl font-bold mt-2">
+                    Thai Tea
+                </h3>
+
+                <p class="text-gray-600 mt-2">
+                  Minuman khas asal Thailand yang terbuat dari campuran teh hitam pekat, rempah-rempah, serta susu.
+                </p>
+
+                <p class="text-xl font-bold text-amber-700 mt-3">
+                    Rp30.000
+                </p>
+
+                <button class="mt-5 w-full bg-amber-700 text-white py-2 rounded-lg hover:bg-amber-800">
+                    Pesan Sekarang
+                </button>
+
+            </div>
+
+        </article>
+
+        <!-- lemon tea -->
+        <article class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition">
+
+            <img src="https://www.nestleprofessional.co.id/sites/default/files/styles/np_article_small/public/2023-11/4%20Kreasi%20Minuman%20dengan%20Bubuk%20Lemon%20Tea.jpg?h=ec041e41&itok=Cr0n2Cgj"
+                alt="Lemon Tea"
+                class="w-full h-72 object-cover">
+
+            <div class="p-5">
+
+                <span class="text-sm text-gray-500">
+                    KATEGORI : MINUMAN
+                </span>
+
+                <h3 class="text-2xl font-bold mt-2">
+                    Lemon Tea
+                </h3>
+
+                <p class="text-gray-600 mt-2">
+                    Minuman populer yang dibuat dari campuran seduhan air teh (biasanya teh hitam atau teh hijau) dengan perasan atau irisan buah lemon.
+                </p>
+
+                <p class="text-xl font-bold text-amber-700 mt-3">
+                    Rp27.000
+                </p>
+
+                <button class="mt-5 w-full bg-amber-700 text-white py-2 rounded-lg hover:bg-amber-800">
+                    Pesan Sekarang
+                </button>
+
+            </div>
+
+        </article>
+
+         <!-- orange juice -->
+        <article class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition">
+
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwuNp1JTX0nX7yEYKSx_RAU__25h0jTCav7RtkcaMLqA&s=10"
+                alt="Orange Juice"
+                class="w-full h-72 object-cover">
+
+            <div class="p-5">
+
+                <span class="text-sm text-gray-500">
+                    KATEGORI : MINUMAN
+                </span>
+
+                <h3 class="text-2xl font-bold mt-2">
+                    Orange Juice
+                </h3>
+
+                <p class="text-gray-600 mt-2">
+                    minuman cair yang diperoleh dari hasil pemerasan atau penyaringan buah jeruk segar.
+                </p>
+
+                <p class="text-xl font-bold text-amber-700 mt-3">
+                    Rp45.000
+                </p>
+
+                <button class="mt-5 w-full bg-amber-700 text-white py-2 rounded-lg hover:bg-amber-800">
+                    Pesan Sekarang
+                </button>
+
+            </div>
+
+        </article>
+
+        <!-- lychee tea -->
+        <article class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition">
+
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTmGP8PQjBr4LSMG8iyTjoH6l5DRoQqEFYioDZt80GoA&s=10"
+                alt="Lychee Tea"
+                class="w-full h-72 object-cover">
+
+            <div class="p-5">
+
+                <span class="text-sm text-gray-500">
+                    KATEGORI : MINUMAN
+                </span>
+
+                <h3 class="text-2xl font-bold mt-2">
+                    Lychee Tea
+                </h3>
+
+                <p class="text-gray-600 mt-2">
+                    Minuman segar dari seduhan daun teh yang dicampur dengan buah leci utuh, sirup, atau ekstrak rasa leci.
+                </p>
+
+                <p class="text-xl font-bold text-amber-700 mt-3">
+                    Rp27.000
+                </p>
+
+                <button class="mt-5 w-full bg-amber-700 text-white py-2 rounded-lg hover:bg-amber-800">
+                    Pesan Sekarang
+                </button>
+
+            </div>
+
+        </article>
+
+        <!-- mojito mint -->
+        <article class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition">
+
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTtnW9PuCTELYvtKN3kfyQkcBcuf4PxpXjAT32cuA4aw&s=10"
+                alt="Mojito Mint"
+                class="w-full h-72 object-cover">
+
+            <div class="p-5">
+
+                <span class="text-sm text-gray-500">
+                    KATEGORI : MINUMAN
+                </span>
+
+                <h3 class="text-2xl font-bold mt-2">
+                    Mojito Mint
+                </h3>
+
+                <p class="text-gray-600 mt-2">
+                    Minuman koktail tradisional asal Kuba yang menyegarkan.
+                </p>
+
+                <p class="text-xl font-bold text-amber-700 mt-3">
+                    Rp50.000
+                </p>
+
+                <button class="mt-5 w-full bg-amber-700 text-white py-2 rounded-lg hover:bg-amber-800">
+                    Pesan Sekarang
+                </button>
+
+            </div>
+
+        </article>
+
+
+        </main>
+
+
+        <!-- Tentang -->
+        <section id="tentang" class="py-10 px-4 text-center">
+        <h2 class="text-3xl font-bold">Tentang LOBUDA</h2>
+        <p>
+            LOBUDA adalah café yang menyediakan berbagai pilihan kopi
+            dan minuman dengan suasana yang nyaman untuk bersantai maupun bekerja.
+        </p>
+        </section>
+
+        <!-- Kontak -->
+        <section id="kontak" class="py-10 px-4 text-center">
+        <h2 class="text-3xl font-bold">Kontak</h2>
+        <p>Alamat : Jl. Antasena Barat NO.10 Surabaya</p>
+        <p>No. HP : 0845-6780-5674</p>
+        <p>Instagram : @lobuda.cow</p>
+        <p>TikTok : @lobuda.cow</p>
+        </section>
+
+    
+
+        <!-- Footer -->
+        <footer class="bg-gray-900 text-white text-center py-5 mt-10">
+        <p>&copy; 2026 LOBUDA | Coffee & Friends</p>
+        </footer>
+
+</body>
+
+</html>         toko kopi
