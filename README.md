@@ -10,4 +10,4 @@ Tapi masi ada kekurangan contohnya:
 untuk bagian kolom coffe dan non coffe di bawah header belum bisa di fungsikan karena guru pembimbing tidak mewajibkan untuk bisa di fungsikan (hanya tampilan)
 
 berikut adalah cuplikan dari webnya:
-<img src=f"img/foto.png">
+<img src="img/foto.png">
